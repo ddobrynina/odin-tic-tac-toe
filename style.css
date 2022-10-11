@@ -1,0 +1,76 @@
+:root{
+    --body-background-color: #ffedd5;
+    --grid-background-color: #f9a8d4;
+    --grid-border-color: #ec4899;
+    --symbol-color: #9d174d; 
+}
+
+body{
+    background-color: var(--body-background-color);
+    color: var(--symbol-color);
+}
+
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.player1{
+    justify-self: right;
+}
+.player2{
+    justify-self: left;
+}
+
+input{
+    font-size: 30px;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button{
+    background-color: var(--grid-background-color);
+    color: var(--symbol-color);
+    height: 50px;
+    width: 200px;
+    border: none;
+    border-radius: 12px;
+    font-size: 30px;
+}
+
+#start{
+    justify-self: right;
+}
+
+#clear{
+    justify-self: left;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-template-rows: repeat(3, minmax(200px, 1fr));
+}
+
+.grid{
+    background-color: var(--grid-background-color);
+    border: 4px solid var(--grid-border-color);
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--symbol-color);
+}
+
+.win{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
